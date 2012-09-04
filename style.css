@@ -6,7 +6,7 @@ This can be changed to your subreddits needs,
 but just make sure that its high enought to fit the menu
 */
 #header-bottom-left{
-padding-top:30px !important;
+padding-top:40px !important;
 }
 
 /*moves links down to make space
@@ -24,7 +24,7 @@ border-left: none;
 position: absolute;
 z-index: 100;
 top: 15px;
-left: 5px
+left: 5px;
 }
 /*turns first paragraph into menu title*/
 .titlebox blockquote:first-child p:first-child {
@@ -80,6 +80,9 @@ background:#ffffff;
 color:orangered;
 }
 /*custom size for menu sections*/
-.titlebox blockquote ul:nth-of-type(4) {width:140px;}
-
-/* ======================================================= */
+/*Change the size of the Help/advice menu*/
+.titlebox blockquote ul:nth-of-type(4) {width:125px;}
+/*Change the size of the Other menu*/
+.titlebox blockquote ul:nth-of-type(2) {width:125px;}
+/*Change the size of the Meta menu*/
+.titlebox blockquote ul:nth-of-type(1) {width:125px;}
