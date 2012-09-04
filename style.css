@@ -1,397 +1,85 @@
-/* =========================================================
- * CHANGELOG
- * May 20, 2012 Added 'shitlist' topic type. - agentlame
- * Apr 24, 2012 - did nothing
- * 04-05-12 Initial version of shitty menu. - agentlame
- * March 26 2012 - added the shitty network logo -aagavin
- * ======================================================= */
-
-/* ======================================================= */
-/* Header Menu / Announcement Bar */
-/* CSS taken from /r/Music. Origanl created by /u/raerth */
-
-html {
-	position: relative;
+/* sticky menu bar */
+/* Original menu by /u/Raerth[http://redd.it/mwpw8]
+eddited for the needs the the shittynetwork @ /r/shittyHUB and /r/shittyNetwork */
+/*
+This can be changed to your subreddits needs,
+but just make sure that its high enought to fit the menu
+*/
+#header-bottom-left{
+padding-top:30px !important;
 }
 
-/*moves links down to make space*/
+/*moves links down to make space
 div.content {
-	margin-top: 55px
+margin-top: 80px;
 }
+*/
 /*hack to enable positioning of child elements*/
 .titlebox form {
-	position: static
+position: static
 }
 /*turns top quote in sidebar into menu container*/
-.md blockquote {
-	padding-left: 0px;
-}
 .titlebox blockquote:first-child {
-	border-left: none;
-	position: absolute;
-	z-index: 10;
-	top: 70px;
-	left: 0px
+border-left: none;
+position: absolute;
+z-index: 100;
+top: 20px;
+left: 150px
 }
 /*turns first paragraph into menu title*/
 .titlebox blockquote:first-child p:first-child {
-	margin: 0px 0px 0px 0px;
-	padding: 0px;
-	float: left;
-	font-size: 12pt;
-	/*background:#eff7ff;*/
-	border: 1px solid #cee3f8;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	font-weight: bold;
-	color: #555;
-	cursor: default;
+margin-top: 0px;
+padding: 4px 17px 3px 23px;
+height: 20px;
+float: left;
+font-size: 10pt;
+background: #eff7ff url(%%poop%%) no-repeat 9px 0px;
+text-indent: -999px;
+
+border: 1px solid #cee3f8;
+font-weight:bold;
+color:#555;
+cursor:default;
 }
 /*turns the lists into menus*/
 .titlebox blockquote ul {
-	float: right;
-	padding: 1px;
-	padding-bottom:8px;
-	margin: 0px 0px;
-	background: #eff7ff;
-	border: 1px solid #cee3f8;
-	background-image: url(%%shittylogo%%);
-	background-repeat:no-repeat;
-	background-position: top center;
-}
-
-.titlebox blockquote ul strong{
-	text-indent:-500px !important;
-	visibility:hidden;
+float: right;
+padding: 1px;
+background: #eff7ff;
+border: 1px solid #cee3f8;
+margin:0px;
 }
 /*hide and styles lists*/
 .titlebox blockquote ul li {
-	display: none;
-	padding: 0px;
-	text-align: center
+display: none;
+padding:2px;
+text-align:center;
 }
 /*makes whole list item selectable*/
 .titlebox blockquote li a {
-	display: block;
-	padding:3px;
+display:block;
+padding:3px;
 }
 /*shows menu on hover*/
 .titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
-	display: block
+display: block
 }
 /*turns top list item into section header*/
 .titlebox blockquote li:first-child {
-	font-size: 12pt;
-	padding: 4px;
-	color: #336699;
-	cursor: pointer
+font-size: 10pt;
+padding: 4px;
+cursor:default;
+padding-left: 27px;
+padding-right: 27px;
 }
 /*styling menu items*/
 .titlebox blockquote:first-child ul li:hover {
+background:#ffffff;
 }
 .titlebox blockquote li a:hover {
-	color: orangered;
-	background-color:#fff;
-	font-weight: bold;
+color:orangered;
 }
-/*custom size for menu sections
-/* TSN Menu */
-.titlebox blockquote ul:nth-of-type(1) {
-	width: 136px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px
-}
-/* Announcement bar */
-.titlebox h3:nth-of-type(1) {
-	/*this code positions the sticky*/
-	position: absolute;
-	display: block;
-	top: 70px;
-	left: 200px;
-	/*this code styles the sticky*/
-	background-color: #eff7ff;
-	color: #555;
-	font-size: 9pt;
-	text-align: left;
-	margin: 5px;
-	border: 1px solid #cee3f8;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	/*width: 50%;*/
-	padding: 7px 10px 7px 10px;
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(4) {width:140px;}
 
-	/*this code creates the image*/
-	/*background-image: url(%%menu-anchor%%);
-		background-repeat: no-repeat;
-		background-position: 2px 2px;*/
-}
-
-/*  END: Header Menu */
-/* ======================================================= */
-
-
-/* ======================================================= */
-/*  User flair classes. */
-/*  Taken from everywhere? */
-.flair-1{
-	background-color:#d8A427;
-	background-image: -o-linear-gradient(#d8A427 ,#b68205);
-	background-image: -moz-linear-gradient(top, #d8A427, #b68205);
-	background-image: -webkit-linear-gradient(top, #d8A427, #b68205);
-	background-image: -ms-linear-gradient(top, #d8A427, #b68205);
-	background-image: linear-gradient(top, #d8A427, #b68205);
-	text-shadow: #333 1px 1px 0px;
-	color:#fcfcfc;
-	border-color:#505050;
-}
-
-/* Silver Flair */
-.flair-2{
-	background-image: linear-gradient(top, #fdfdfd, #ccc);                /* All similar code should be replaced by this soon */
-	background-image: -o-linear-gradient(#fdfdfd,#ccc);                   /* Opera 10.5+ */
-	background-image: -moz-linear-gradient(top, #fdfdfd, #ccc);        /* FF3.6+ */
-	background-image: -webkit-gradient(linear, left top, left bottom, #fdfdfd, #ccc); /* Saf4+, Chrome */
-	background-image: -webkit-linear-gradient(top, #fdfdfd, #ccc);     /* Chrome 10+, Saf5.1+, iOS 5+ */
-	background-image: -ms-linear-gradient(top, #fdfdfd, #ccc);          /* IE10 */
-	color:#a0a0a0;
-	border-color:#ccc;
-	text-shadow: #333 1px 1px 0px;
-}
-
-/* Pink flair */
-.flair-3{
-	background-color:#ff69b4;
-	background-image: -o-linear-gradient(#ff69b4,#cc36a1);
-	background-image: -moz-linear-gradient(top, #ff69b4, #cc36a1);
-	background-image: -webkit-linear-gradient(top, #ff69b4, #cc36a1);
-	background-image: -ms-linear-gradient(top, #ff69b4, #cc36a1);
-	background-image: linear-gradient(top, #ff69b4, #cc36a1);
-	text-shadow: #333 1px 1px 0px;
-	color:#fcfcfc;
-	border-color:#505050;
-}
-
-/* Green Flair */
-.flair-4{color:#191}
-
-/* Red Flair */
-.flair-5{color:#EB1532}
-
-/*  END: user flair */
-/* ======================================================= */
-/* header image made by PMG - aagavin
-#header-bottom-left{
-  padding-top:33px;
-  background-image:url(%%shittynetwork%%);
-  background-repeat:no-repeat;
-  background-position: 734px center;
-}
-*/
-/* ======================================================= */
-/*  YES, NO, ABSTAIN TAGS - adapted from r-gue */
-/*  Taken from /r/PornOverlords */
-
-a[href="/yes"]:before {
-	content: "WORD";
-	color: green;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/yes"]:hover {
-	cursor: default
-}
-a[href="/no"]:before {
-	content: "HELL NAH";
-	color: red;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/no"]:hover {
-	cursor: default
-}
-a[href="/abstain"]:before {
-	content: "WHODAFUQCARE BOUT DIS";
-	color: orange;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/abstain"]:hover {
-	cursor: default
-}
-a[href="/no2"]:before {
-	content: "NO";
-	color: red;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 3px solid black;
-	font-size: 200pt;
-	font-weight: bold;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px
-}
-a[href="/no2"]:hover {
-	cursor: default
-}
-
-a[href="/aye!"]:before {
-	content: "AYE!";
-	color: green;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/aye"]:hover {
-	cursor: default
-}
-a[href="/wthn"]:before {
-	content: "Eh, why the hell not?";
-	color: green;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/yes"]:hover {
-	cursor: default
-}
-
-a[href="/ibyp"]:before {
-	content: "I beg your pardon?";
-	color: red;
-	padding: 0 3px;
-	margin: 0px 5px 3px 0px;
-	border: 1px solid black;
-	font-size: x-small;
-	font-weight: bold;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px
-}
-a[href="/no"]:hover {
-	cursor: default
-}
-
-/* ======================================================= */
-/* vote thread colour */
-a[href*="/official"].title:link {
-	color: red !important
-}
-a[href*="/official"].title:visited {
-	color: green !important
-}
-/* To-Do List, Vote */
-a.title[href*="/to"]:before {
-	content: " " url(%%todo%%) " "
-}
-a[href*="/to"].title:link {
-	color: red !important
-}
-a[href*="/to"].title:visited {
-	color: green !important
-}
-a.title[href*="/official"]:before {
-	content: " " url(%%vote%%) " "
-}
-a[href*="/official"].title:link {
-	color: red !important
-}
-a[href*="/official vote thread"].title:visited {
-	color: green !important
-}
-a.title[href*="/brainstorming"]:before {
-	content: " "url(%%brainstorm%%) " "
-}
-a[href*="/brainstorming"].title:link {
-	color: red !important
-}
-a[href*="/brainstorming"].title:visited {
-	color: green !important
-}
-a.title[href*="/completed"]:before {
-	content: " " url(%%complete%%) " "
-}
-a.title[href*="/discussion"]:before {
-	content: " " url(%%discussion%%) " "
-}
-
-/* shitlist topic type */
-a[href*="/shitlist"].title:link {
-	color: brown !important
-}
-a[href*="/shitlist"].title:visited {
-	color: Peru !important
-}
-a.title[href*="/shitlist"]:before {
-	content: " " url(%%poop%%) " "
-}
-
-/*  END: Voting tags / topic type tags */
-/* ======================================================= */
-
-
-/* ======================================================= */
-/*  Anything specific to /r/ShittyNetwork */
-
-/*SIDEBAR IMAGE*/
-.side{
-	padding-top:205px;
-	background-image:url(%%shittyall%%);
-	background-repeat:no-repeat;
-	margin-top:5px;
-}
-
-/*BACKGROUND IMAGE*/
-/*body {
-    background: url(%%shittystamp%%) no-repeat fixed center center;
-    } */
-/*body {
-    background: url(%%shittystamp%%) no-repeat;
-    background-position: 730px 415px;
-    } */
-
-/* SALTYCHRISTIAN IS COOL */
-
-.author[href$="/SaltyChristian"] {
-	color: #A39415;
-	font-size: 9pt;
-}
-.flair-classy {
-	width: 139px;
-	height: 40px;
-	display: inline-block;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-position: -9999px -9999px;
-	vertical-align: -40%;
-	margin-right: -2px;
-	border: none;
-	background-position: 0px 0px;
-	background-image: url(%%class%%);
-}
-
-
-
-
-/*  END: /r/ShittyNetwork */
 /* ======================================================= */
