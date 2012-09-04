@@ -1,8 +1,8 @@
-Subreddit						Category
+Subreddit				Category
 	
-/r/ShittyAskScience				Academics/Science
+/r/ShittyAskScience			Academics/Science
 	
-/r/ShittyAdvice					Help/advice
+/r/ShittyAdvice				Help/advice
 	
 /r/ShittyBattlestations			ShittySFWporn
 	
@@ -10,37 +10,37 @@ Subreddit						Category
 	
 /r/ShittyAdviceAnimals			Other
 	
-/r/ShittyEarthPorn				ShittySFWporn
+/r/ShittyEarthPorn			ShittySFWporn
 	
-/r/ShittyAMA					Help/advice
+/r/ShittyAMA				Help/advice
 	
-/r/ShittyAskReddit				Help/advice
+/r/ShittyAskReddit			Help/advice
 	
-/r/ShittyFoodPorn				ShittySFWporn
+/r/ShittyFoodPorn			ShittySFWporn
 	
 /r/ShittyTodayILearned			Help/advice
 	
 /r/ShittyTechSupport			Help/advice
 	
-/r/ShittyPoetry					Life, Culture & The Arts
+/r/ShittyPoetry				Life, Culture & The Arts
 	
-/r/ShittySeduction				Life, Culture & The Arts
+/r/ShittySeduction			Life, Culture & The Arts
 	
-/r/ShittyAskHistory				Academics/Science
+/r/ShittyAskHistory			Academics/Science
 	
-/r/AskAShittyDoctor				Help/advice
+/r/AskAShittyDoctor			Help/advice
 	
 /r/AskAShittyPhilosopher		Academics/Science
 	
-/r/ShittyAskALawyer				Help/advice
+/r/ShittyAskALawyer			Help/advice
 	
 /r/ShittyProgramming			Academics/Science
 	
 /r/ShittySocialScience			Life, Culture & The Arts
 	
-/r/ShittyAskCooking				Help/advice
+/r/ShittyAskCooking			Help/advice
 	
-/r/ShittyPhotoshop				Life, Culture & The Arts
+/r/ShittyPhotoshop			Life, Culture & The Arts
 	
 /r/ShittyEngineering			Academics/Science
 	
@@ -48,4 +48,4 @@ Subreddit						Category
 	
 /r/ShittyTheoryOfReddit			Meta
 	
-/r/AskAShittyParent				Help/advice
+/r/AskAShittyParent			Help/advice
