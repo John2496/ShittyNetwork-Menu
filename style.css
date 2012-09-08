@@ -29,7 +29,7 @@ margin-top: 80px;
 /*turns first paragraph into menu title*/
 .titlebox blockquote:first-child p:first-child {
   margin-top: 0px;
-  padding: 4px 17px 3px 23px;
+  padding: 4px 17px 1px 20px;
   height: 20px;
   float: left;
   font-size: 10pt;
