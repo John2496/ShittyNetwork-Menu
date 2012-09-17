@@ -6,7 +6,7 @@ This can be changed to your subreddits needs,
 but just make sure that its high enought to fit the menu
 */
 #header-bottom-left{
-  padding-top:40px !important;
+padding-top:60px !important;   /* <--- tweak to increase header height if necessary */
 }
 
 /*moves links down to make space
@@ -16,72 +16,72 @@ margin-top: 80px;
 */
 /*hack to enable positioning of child elements*/
 .titlebox form {
-  position: static
+position: static
 }
 /*turns top quote in sidebar into menu container*/
 .titlebox blockquote:first-child {
-  border-left: none;
-  position: absolute;
-  z-index: 100;
-  top: 15px;
-  left: 5px;
+border-left: none;
+position: absolute;
+z-index: 100;
+top: 45px;  /* positions the menu up/down*/
+left: 0px;   /* positions the menu left/right*/
 }
+
 /*turns first paragraph into menu title*/
 .titlebox blockquote:first-child p:first-child {
-  margin-top: 0px;
-  padding: 4px 17px 1px 20px;
-  height: 20px;
-  float: left;
-  font-size: 10pt;
-  background: #eff7ff url(%%poop%%) no-repeat 9px 0px;
-  text-indent: -999px;
-  border: 1px solid #cee3f8;
-  font-weight:bold;
-  color:#555;
-  cursor:default;
+margin-top: 0px;
+padding: 3px 17px 3px 23px;
+height: 19px;
+float: left;
+font-size: 10pt;
+background: #eff7ff url(%%poop%%) no-repeat 9px -2px;    /*<--change hex value(#eff7ff) for poop's background */
+text-indent: -999px;
+
+border: 1px solid #cee3f8; /*<--change hex value for poop's border colour */
+font-weight:bold;
+color:#555;
+cursor:default;
 }
 /*turns the lists into menus*/
 .titlebox blockquote ul {
-  float: right;
-  padding: 1px;
-  background: #eff7ff;
-  border: 1px solid #cee3f8;
-  margin:0px;
+float: right;
+padding: 1px;
+background: #eff7ff;    /*<--change hex value for menu background colour */
+border: 1px solid #cee3f8;    /*<--change hex value for menu border colour */
+margin:0px;
 }
 /*hide and styles lists*/
 .titlebox blockquote ul li {
-  display: none;
-  padding:2px;
-  text-align:center;
+display: none;
+padding:2px;
+text-align:center;
 }
 /*makes whole list item selectable*/
 .titlebox blockquote li a {
-  display:block;
-  padding:3px;
+display:block;
+padding:3px;
 }
 /*shows menu on hover*/
 .titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
-  display: block
+display: block
 }
 /*turns top list item into section header*/
 .titlebox blockquote li:first-child {
-  font-size: 10pt;
-  padding: 4px;
-  cursor:default;
-  padding-left: 27px;
-  padding-right: 27px;
+font-size: 10pt;
+padding: 4px;
+cursor:default;
+padding-left: 27px;
+padding-right: 27px;
 }
 /*styling menu items*/
 .titlebox blockquote:first-child ul li:hover {
-  background:#ffffff;
+background:#ffffff;
 }
 .titlebox blockquote li a:hover {
-  color:orangered;
+color:orangered;
 }
 /*custom size for menu sections*/
 /*Change the size of the Help/advice menu*/
-.titlebox blockquote ul:nth-of-type(4) {width:125px;}
-/*Change the size of the Other menu*/
-.titlebox blockquote ul:nth-of-type(2) {width:125px;}
+.titlebox blockquote ul:nth-of-type(3) {width:125px;}
 /*Change the size of the Meta menu*/
 .titlebox blockquote ul:nth-of-type(1) {width:125px;}
