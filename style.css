@@ -1,87 +1,104 @@
+/***************************/
 /* sticky menu bar */
 /* Original menu by /u/Raerth[http://redd.it/mwpw8]
 eddited for the needs the the shittynetwork @ /r/shittyHUB and /r/shittyNetwork */
-/*
-This can be changed to your subreddits needs,
-but just make sure that its high enought to fit the menu
-*/
-#header-bottom-left{
-padding-top:60px !important;   /* <--- tweak to increase header height if necessary */
-}
 
-/*moves links down to make space
+#header-bottom-left {
+    background: #755D46;
+    padding-top: 28px !important
+    }
 div.content {
-margin-top: 80px;
-}
-*/
-/*hack to enable positioning of child elements*/
+    margin-top: 10px
+    }
 .titlebox form {
-position: static
-}
-/*turns top quote in sidebar into menu container*/
+    position: static
+    }
 .titlebox blockquote:first-child {
-border-left: none;
-position: absolute;
-z-index: 100;
-top: 45px;  /* positions the menu up/down*/
-left: 0px;   /* positions the menu left/right*/
-}
+    border-left: none;
+    position: absolute;
+    z-index: 100;
+    top: 13px;
+    left: -9px
+    }
 
-/*turns first paragraph into menu title*/
 .titlebox blockquote:first-child p:first-child {
-margin-top: 0px;
-padding: 3px 17px 3px 23px;
-height: 19px;
-float: left;
-font-size: 10pt;
-background: #eff7ff url(%%poop%%) no-repeat 9px -2px;    /*<--change hex value(#eff7ff) for poop's background */
-text-indent: -999px;
+    margin-top: 2px;
+    display: block;
+    /* padding: 0px 0px 0px 0px;  this changes the size of the box of the shitty logo. at the moment, it's being sized by the link inside the poop box */
+    height: 19px;
+    margin-right: 1px; 
+    margin-left: 2px;
+    float: left;
+    font-size: 9pt;
+    background: #fff url(%%poop%%) no-repeat 9px -3px; /* position of the logo inside of the box */
+    border: 1px solid #aaa;
+    font-weight: bold;
+    color: #555;
+    cursor: default;
+    height:22px;
+    width: 45px;
+    }
 
-border: 1px solid #cee3f8; /*<--change hex value for poop's border colour */
-font-weight:bold;
-color:#555;
-cursor:default;
-}
-/*turns the lists into menus*/
+.titlebox blockquote:first-child p:first-child a { /* styles the poop link */
+  padding-left: 23px;
+	padding-bottom: 11px; /* link fills poop box completely at half of the poop box's height */
+        padding-top: 10px;
+	margin-right: -10px;
+	display: inline-block;
+	margin: 0px;
+	width: 20px;
+
+	}
 .titlebox blockquote ul {
-float: right;
-padding: 1px;
-background: #eff7ff;    /*<--change hex value for menu background colour */
-border: 1px solid #cee3f8;    /*<--change hex value for menu border colour */
-margin:0px;
-}
-/*hide and styles lists*/
+    float: left;
+    background: #fff;
+    list-style: none;
+    border: 1px solid #aaa;
+    margin: 0px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 0px;
+    font-weight: bold;
+    margin-top: 2px
+    }
 .titlebox blockquote ul li {
-display: none;
-padding:2px;
-text-align:center;
-}
-/*makes whole list item selectable*/
+    display: none;
+    text-align: center;
+    min-width: 170px; /* value is determined by the pixel length of the longest sub name  (In this case, it's Ask A Shitty Philosopher)*/
+    }
 .titlebox blockquote li a {
-display:block;
-padding:3px;
-}
-/*shows menu on hover*/
+    display: block;
+    color: #000;
+    font-weight: normal;  
+    padding: 6px 8px 6px 8px;
+    }
 .titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
-display: block
-}
-/*turns top list item into section header*/
+    display: block
+    }
+.titlebox blockquote ul:hover {
+    border: 1px solid #555;
+    -webkit-box-shadow: 2px 2px 3px 2px #999;
+    box-shadow: 2px 2px 3px 2px #999; 
+    }
 .titlebox blockquote li:first-child {
-font-size: 10pt;
-padding: 4px;
-cursor:default;
-padding-left: 27px;
-padding-right: 27px;
-}
-/*styling menu items*/
-.titlebox blockquote:first-child ul li:hover {
-background:#ffffff;
-}
-.titlebox blockquote li a:hover {
-color:orangered;
-}
-/*custom size for menu sections*/
-/*Change the size of the Help/advice menu*/
-.titlebox blockquote ul:nth-of-type(3) {width:125px;}
-/*Change the size of the Meta menu*/
-.titlebox blockquote ul:nth-of-type(1) {width:125px;}
+    font-size: 9pt;
+    padding: 4px;
+    cursor: default
+    }
+.titlebox blockquote:first-child ul li:hover, .titlebox blockquote:first-child ul:hover{
+    background: #b4c9de;
+    color: #fff;
+    }
+
+.titlebox blockquote ul li a:hover {
+    color: #fff;
+    background-color: #8dacca;
+    font-weight:bold;
+    }
+.titlebox blockquote ul li a {
+    padding: 8px;
+    background-color: #fff;
+    }
+
+
+/***************************/ 
